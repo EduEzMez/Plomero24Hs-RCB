@@ -1,0 +1,25 @@
+{
+  "name": "leandro---plomero-24hs-rcb",
+  "version": "1.0.0",
+  "description": "Sitio web de plomeria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EdEzMez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduEzMez/Plomero24Hs-RCB.git"
+  },
+  "keywords": [
+    "plomero",
+    "destapaciones",
+    "destapacion",
+    "plomeria"
+  ],
+  "bugs": {
+    "url": "https://github.com/EduEzMez/Plomero24Hs-RCB/issues"
+  },
+  "homepage": "https://github.com/EduEzMez/Plomero24Hs-RCB#readme"
+}
