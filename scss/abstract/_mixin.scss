@@ -4,3 +4,36 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+//Efecto Aparecer1
+@keyframes aparece1{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        background-color: $color-boton-secundario;
+    }
+}
+@mixin apareceboton{
+    animation-name: aparece1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+//Efecto APARECER
+@keyframes aparece{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@mixin aparecer{
+    animation-name: aparece;
+    animation-duration: 2s;
+}
