@@ -45,11 +45,12 @@ header{
             background-color: $color-boton-primario;
             border-radius: 20px;
             padding: 10px;
+            box-shadow: 1px 1px 2px black;
             &:hover{
                 @include apareceboton;
             }
         }
-    }
+       }
 }
 
 @media (min-width: 688px){

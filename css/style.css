@@ -76,6 +76,7 @@ header .container__nav a {
   background-color: #566573;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 1px 1px 2px black;
 }
 header .container__nav a:hover {
   animation-name: aparece1;
