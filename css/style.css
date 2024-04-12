@@ -176,6 +176,7 @@ main .contenedor__h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px;
 }
 main h1 {
   max-width: 80%;
@@ -194,14 +195,51 @@ main h1 {
   }
 }
 main .contenedor__frace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #2C3E50;
   height: 400px;
+  padding: 20px;
 }
-main .contenedor__frace p {
+main .contenedor__frace .frace {
   padding: 20px;
   max-width: 80%;
   text-align: center;
+  font-weight: 300;
   color: #F4F6F6;
+}
+main .contenedor__frace .contacto {
+  padding: 20px;
+  max-width: 80%;
+  font: 20px;
+  text-align: center;
+  color: #F1C40F;
+}
+main .contenedor__ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background-color: #212F3C;
+  padding: 20px;
+}
+main .info__mapa {
+  text-align: center;
+  max-width: 70%;
+  font-size: 20px;
+  color: #CCD1D1;
+  font-weight: 400;
+  padding: 10px;
+}
+main .mapa {
+  width: 80%;
+  height: 500px;
+  border: 2px solid #212F3C;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

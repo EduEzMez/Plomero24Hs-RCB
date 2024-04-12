@@ -9,6 +9,7 @@ main{
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
+        padding: 20px;
     }
     h1{
         max-width: 80%;
@@ -27,15 +28,46 @@ main{
     }
 
     .contenedor__frace{
+        @include flex-center-center;
+        flex-direction: column;
         background-color: $color-fondo-primario;
         height: 400px;
-        p{
+        padding: 20px;
+        .frace{
             padding: 20px;
             max-width: 80%;
             text-align: center;
+            font-weight: 300;
             color: $color-primario;
         }
-
+        .contacto{
+            padding: 20px;
+            max-width: 80%;
+            font: 20px;
+            text-align: center;
+            color: $color-tercero;
+        }
     }
-
+    .contenedor__ubicacion{
+        @include flex-center-center;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        background-color: $color-fondo-tercero;
+        padding: 20px;
+    }
+    .info__mapa{
+        text-align: center;
+        max-width: 70%;
+        font-size: 20px;
+        color: $color-secundario;
+        font-weight: 400;
+        padding: 10px;
+    }
+    .mapa{
+        width:80%;
+        height: 500px;
+        border: 2px solid $color-fondo-tercero;
+        border-radius: 10px;
+    }
 }
