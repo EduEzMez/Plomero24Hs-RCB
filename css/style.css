@@ -214,6 +214,9 @@ main .button_wp:hover {
   color: #F4F6F6;
   text-shadow: 1px 1px 2px black;
 }
+main a {
+  text-decoration: none;
+}
 main .contenedor__frace {
   display: flex;
   justify-content: center;
