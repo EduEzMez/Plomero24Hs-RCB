@@ -374,4 +374,113 @@ main .mapa {
   }
 }
 
+.contenedor__servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #212F3C;
+}
+.contenedor__servicios .contenedor_h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #F4F6F6;
+  text-shadow: 1px 1px 2px black;
+}
+.contenedor__servicios .contenedor_h1 span {
+  color: #F1C40F;
+  text-shadow: 1px 1px 2px black;
+}
+.contenedor__servicios .contenedor__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor__servicios .contenedor__grid .carta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2C3E50;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 3px 3px 2px black;
+}
+.contenedor__servicios .contenedor__grid .carta .cajatitulo {
+  text-align: center;
+}
+.contenedor__servicios .contenedor__grid .carta .cajatitulo p {
+  color: #F1C40F;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px black;
+}
+.contenedor__servicios .contenedor__grid .carta .cajaimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.contenedor__servicios .contenedor__grid .carta .cajaimg img {
+  width: 70%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  border: 5px solid #566573;
+}
+.contenedor__servicios .contenedor__grid .carta .cajatext {
+  text-align: center;
+}
+.contenedor__servicios .contenedor__grid .carta .cajatext p {
+  text-align: center;
+  font-weight: 300;
+  color: #F4F6F6;
+}
+@media (min-width: 1024px) {
+  .contenedor__servicios .contenedor__grid .contenedor__grid {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor__servicios .contenedor__grid .carta {
+    max-width: 80%;
+    display: grid;
+    grid-template-areas: "titulo titulo" "img texto";
+  }
+  .contenedor__servicios .contenedor__grid .carta .cajatitulo {
+    text-align: center;
+    grid-area: titulo;
+  }
+  .contenedor__servicios .contenedor__grid .carta .cajatitulo p {
+    color: #F1C40F;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+  }
+  .contenedor__servicios .contenedor__grid .carta .cajaimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    grid-area: img;
+  }
+  .contenedor__servicios .contenedor__grid .carta .cajaimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border: 5px solid #566573;
+  }
+  .contenedor__servicios .contenedor__grid .carta .cajatext {
+    grid-area: texto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

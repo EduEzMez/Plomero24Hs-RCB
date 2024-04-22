@@ -1,0 +1,101 @@
+.contenedor__servicios{
+    @include flex-center-center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: $color-fondo-tercero;
+    .contenedor_h1{
+        text-align: center;
+        font-size: 30px;
+        color: $color-primario;
+        text-shadow: 1px 1px 2px black;
+        span{
+            color: $color-tercero;
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+    
+    .contenedor__grid{
+        @include flex-center-center;
+        flex-direction: column;
+        .carta{
+            width: 100%;
+            @include flex-center-center;
+            flex-direction: column;
+            background-color: $color-fondo-primario;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 3px 3px 2px black;
+            .cajatitulo{
+                text-align: center;
+                p{
+                    color: $color-tercero;
+                    font-size: 30px;
+                    text-shadow: 3px 3px 3px black
+                }
+            }
+            .cajaimg{
+                @include flex-center-center;
+                margin: 10px;
+                img{
+                    width: 70%;
+                    height: auto;
+                    display: block;
+                    border-radius: 20px;
+                    border: 5px solid $color-boton-primario;
+                }
+            }
+            
+            .cajatext{
+                text-align: center;
+                p{
+                    text-align: center;
+                    font-weight: 300;
+                    color: $color-primario;
+                }
+            }
+        }
+        @media (min-width: 1024px){
+            .contenedor__grid{
+                flex-direction: column;
+                @include flex-center-center;
+            }
+            .carta{
+                max-width: 80%;
+                display: grid;
+                grid-template-areas: 
+                "titulo titulo"
+                "img texto"
+                ;
+                .cajatitulo{
+                    text-align: center;
+                    grid-area: titulo;
+                    p{
+                        color: $color-tercero;
+                        font-size: 30px;
+                        text-shadow: 3px 3px 3px black
+                    }
+                }
+                .cajaimg{
+                    @include flex-center-center;
+                    width: 300px;
+                    grid-area: img;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: 20px;
+                        border: 5px solid $color-boton-primario;
+                    }
+                }
+                .cajatext{
+                    grid-area: texto;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
