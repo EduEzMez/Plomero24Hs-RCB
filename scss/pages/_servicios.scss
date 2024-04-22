@@ -22,6 +22,7 @@
         .carta{
             width: 100%;
             @include flex-center-center;
+            @include aparecer;
             flex-direction: column;
             background-color: $color-fondo-primario;
             border-radius: 20px;

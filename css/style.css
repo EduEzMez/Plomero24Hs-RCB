@@ -33,7 +33,6 @@ header {
   width: 100%;
   height: 200px;
   background-color: #2C3E50;
-  box-shadow: 5px 5px 3px black;
 }
 header .container__logo {
   border-radius: 20px;
@@ -92,7 +91,7 @@ header .container__nav a:hover {
 }
 footer {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +103,10 @@ footer__container {
 }
 footer .telefono__container {
   grid-area: telefono;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -120,6 +123,23 @@ footer .telefono__container .numero__telefono {
   color: #F4F6F6;
   text-shadow: 1px 1px 2px black;
   font-weight: 800;
+}
+footer .telefono__container .button_wp {
+  padding: 20px;
+  font-weight: 800;
+  color: #212F3C;
+  background-color: #25d366;
+  border-radius: 40px;
+  box-shadow: 2px 2px 3px black;
+  cursor: pointer;
+}
+footer .telefono__container .button_wp:hover {
+  background-color: #128c7e;
+  color: #F4F6F6;
+  text-shadow: 1px 1px 2px black;
+}
+footer .telefono__container a {
+  text-decoration: none;
 }
 @media (min-width: 1024px) {
   footer .telefono__container .descripcion__telefono {
@@ -405,6 +425,8 @@ main .mapa {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: aparece;
+  animation-duration: 2s;
   flex-direction: column;
   background-color: #2C3E50;
   border-radius: 20px;

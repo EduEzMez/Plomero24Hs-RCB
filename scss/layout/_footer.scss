@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 300px;
+    height: 350px;
     @include flex-center-center;
     background-color: $color-fondo-secundario;
     &__container{
@@ -13,6 +13,8 @@ footer{
     }
     .telefono__container{
         grid-area: telefono;
+        @include flex-center-center;
+        flex-direction: column;
         width: 100%;
         height: auto;
         padding: 20px;
@@ -28,6 +30,23 @@ footer{
             color: $color-primario;
             text-shadow: 1px 1px 2px black;
             font-weight: 800;
+        }
+        .button_wp{
+            padding: 20px;
+            font-weight: 800;
+            color: $color-fondo-tercero;
+            background-color: $color-boton-tercero;
+            border-radius: 40px;
+            box-shadow: 2px 2px 3px black;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-boton-cuarto;
+                color:$color-primario;
+                text-shadow: 1px 1px 2px black
+                }
+        }
+        a{
+            text-decoration: none;
         }
 
         @media (min-width:1024px){
